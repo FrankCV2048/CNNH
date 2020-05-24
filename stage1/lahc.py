@@ -41,4 +41,6 @@ def learning_hash(s,q,T,error):
     return H
     pass
 
-
+# a=np.random.randint(-1,1,[5000,5000])
+# h=learning_hash(a,20,10,0.3)
+# print(h)
