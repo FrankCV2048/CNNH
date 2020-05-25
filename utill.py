@@ -22,13 +22,13 @@ def data_load(path,batch_size):
                              batch_size=batch_size * 8, shuffle=False, num_workers=0, pin_memory=True)
     print('val set: {}'.format(len(test_loader.dataset)))
 
-    data_train_iter=iter(train_loader)
-    data_test_iter=iter(test_loader)
+    # data_train_iter=iter(train_loader)
+    # data_test_iter=iter(test_loader)
 
     # image_train,label_train=data_train_iter.next()
     # image_test, label_test = data_test_iter.next()
 
-    return data_train_iter,data_test_iter
+    return train_loader,test_loader
     pass
 
 
